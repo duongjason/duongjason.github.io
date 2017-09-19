@@ -1,0 +1,234 @@
+/* CSS code for all pages */
+
+/* The color scheme for the background and headers was inspired by The Martin
+   Agency's website design located here: http://www.martinagency.com/work/jfk-an-idea-lives-on
+   I loved the contrast between the pale gold and paper white colors, and I
+   wanted to effectively use the two colors to present my content in my own way,
+   without other colors like the red or charcoal black on the website in the
+   link. */
+body{
+  background-color: #F4F4F4;
+}
+
+h3{
+  text-align: center;
+  color: #C0B283;
+  font-size: 40px;
+}
+
+#Name{
+  color: #C0B283;
+  text-align: center;
+  font-size: 40px;
+}
+
+.self_img{
+  text-align: center;
+}
+
+.navigation{
+  list-style-type: none;
+  text-align: center;
+}
+
+/*The navigation list should be horizontal rather than vertical*/
+.navigation li{
+  display: inline;
+}
+
+/*Links themselves must be formatted properly*/
+.navigation a{
+  color: #C0B283;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 15px;
+}
+
+.navigation a:hover{
+  background-color: #D3D3D3;
+}
+
+/* CSS for Home page*/
+.home_paragraph{
+  font-size: 25px;
+}
+
+.setting_img{
+  text-align: center;
+}
+
+/* CSS for Past Work Experience page*/
+.exp_paragraph{
+  font-size: 25px;
+}
+
+.company{
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.occupation{
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.insitu_img{
+  text-align: center;
+}
+
+/* CSS for Projects page*/
+.proj_paragraph{
+  font-size: 25px;
+}
+
+.proj_img{
+  text-align: center;
+}
+
+.bold_ital{
+  font-style: italic;
+  font-weight: bold;
+}
+
+video{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+
+/* CSS for Education page*/
+.edu_paragraph{
+  font-size: 25px;
+}
+
+.edu_group{
+  width: 1485px;
+  float: left;
+}
+.educlass_paragraph{
+  font-size: 25px;
+  float: left;
+  width: 900px;
+}
+
+.logo{
+  float: right;
+  width: 250px;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+hr{
+  clear:both;
+}
+
+.eduawards_paragraph{
+  font-size: 25px;
+}
+
+/* CSS for Technical Skills page*/
+.tech_paragraph{
+  font-size: 25px;
+}
+
+.techsoftware_paragraph{
+  font-size: 25px;
+  column-count: 3;
+  list-style-position: inside;
+}
+
+/* CSS for Volunteer Work page*/
+.volunteer_paragraph{
+  font-size: 25px;
+}
+
+.rc_group{
+  float: left;
+  width: 1485px;
+}
+
+.rc_img{
+  float: left;
+  margin-left: 4%;
+  margin-bottom: 3%;
+  width: 450px;
+}
+
+.rc_paragraph{
+  font-size: 25px;
+  float: right;
+  width: 900px;
+  margin-right: 3%;
+  margin-left: 2%;
+}
+
+.nya_group{
+  float: left;
+  width: 1485px;
+}
+
+.nya_img{
+  float: right;
+  margin-right: 4%;
+  margin-bottom: 3%;
+  width: 450px;
+}
+
+.nya_paragraph{
+  font-size: 25px;
+  margin-right: 3%;
+  margin-left: 2%;
+  float: left;
+  width: 900px;
+}
+
+.cyi_group{
+  float: left;
+  width: 1485px;
+}
+
+.cyi_img{
+  float: left;
+  margin-left: 4%;
+  margin-bottom: 3%;
+  width: 450px;
+}
+
+.cyi_paragraph{
+  font-size: 25px;
+  float: right;
+  width: 900px;
+  margin-right: 3%;
+  margin-left: 2%;
+}
+
+/* CSS for About Me page*/
+.about_paragraph{
+  font-size: 25px;
+}
+
+.my_photos{
+  text-align: center;
+}
+
+/* CSS for Contact Info page*/
+.contact_paragraph{
+  font-size: 25px;
+}
+
+#email{
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+#number{
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+#LinkedIn{
+  font-size: 25px;
+}
