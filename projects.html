@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jason's Resume and Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all"/>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="Name"> Jason Duong </h1>
+    <!-- Image source: These three photos were taken by my brother
+    at home in Brooklyn. -->
+    <div class = "self_img">
+      <img alt = "Self Photo" src="images/self_photo.JPG"/>
+      <img alt = "Self Photo" src="images/hair_photo.JPG"/>
+      <img alt = "Self Photo" src="images/linkedin_photo.png"/>
+    </div>
+
+    <nav>
+      <ul class = "navigation">
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="past_work_experience.html"> Past Work Experience </a> </li>
+        <li> <a href="projects.html"> Projects </a> </li>
+        <li> <a href="education.html"> Education </a> </li>
+        <li> <a href="technical_skills.html"> Technical Skills </a> </li>
+        <li> <a href="volunteer.html"> Volunteer Work </a> </li>
+        <li> <a href="about_me.html"> About Me </a> </li>
+        <li> <a href="contact.html"> Contact Info </a> </li>
+      </ul>
+    </nav>
+    <hr/>
+  </header>
+
+  <section>
+    <h3> Projects </h3>
+    <p class = "proj_paragraph">
+      I have worked on various hardware and software projects at Cornell and in
+      my own personal time. Doing so has allowed me to constantly hone my craft
+      and become a better electrical and computer engineer. I have seen the
+      intricacies of both programming and designing circuits, which has allowed
+      me to become well-versed in multiple technical fields. I can see
+      connections between software and hardware that traditional electrical
+      engineers wouldn't be able to and have become proficient in analyzing
+      larger systems while staying detail-oriented. My projects have ranged from
+      work with transistors to creating order books that can process millions of
+      stock transactions in less than a second.
+    </p>
+    <hr/>
+  </section>
+
+  <section>
+    <h3> Software </h3>
+
+    <p class = "proj_paragraph">
+        <span class="bold_ital"> C/C++ </span>
+        <br/>
+        One of my projects involved designing an algorithm with a partner in C++
+        that implements a trading system. Given thousands of transactions of a
+        company's stock such as Apple, Amazon, Google, and Microsoft, we created
+        a system that would process all of these transactions and update an
+        order book containing information about the ask and bid prices of the
+        stock as well as the number of shares at each price. This was done in an
+        average of .0103s per file, which was 100x better than the restriction
+        of 1s given. Real-time processing was simulated and a Makefile was
+        created with no optimization flags that would affect the timing of the
+        implementation. The different transactions considered were insertions,
+        partial deletions, full deletions, and executions of the stocks. Upon
+        analysis of the information, approximately 90% of transaction types of
+        any of the stocks were insertions and deletions. Thus, to maximize
+        efficiency, these two transactions were implemented in O(1) time. The
+        data structure designed and used was a hash table array that was indexed
+        by the price of shares in cents, with each element containing the number
+        of shares at that price. In addition, the minimum and maximum price of
+        the current transaction were accounted for so that the hash table could
+        be traversed in a certain range and the order book could be printed out.
+        A class was designed called Stock which contained the hash table as well
+        as the current min and max value prices that the stocks were hashed to.
+        In addition, because there were cases where the hash tables were too
+        small to handle a transaction, they would be resized to twice the
+        request price in cents. This linear cost of resizing was effectively
+        amortized by the larger array, resulting in a method of hashing that
+        handled thousands of insertions in contant time. By nature of the
+        design, the order book did not require any type of sorting algorithms,
+        which would have otherwise made the program run six times slower than
+        normal. The picture below shows the execution time of the algorithm
+        creating the order book when using queues with MergeSort and when using
+        the hash table.
+    </p>
+
+    <!--Image source: This image is a screenshot taken of one of the tables I
+    generated in my report for ECE 2400 on the results of the algorithm. -->
+    <div class = "proj_img">
+      <img alt = "Algorithm Performance" src="images/stocks_project.JPG"/>
+    </div>
+
+    <p class = "proj_paragraph">
+        Another project that I worked on using C++ was creating an edge
+        detection algorithm that would create a binary image from the original
+        three-dimensional grayscale image. The algorithm first applied a mean
+        filter to the original image to remove any noise that was introduced.
+        This was typically Gaussian noise, which resulted in  very spotty
+        images. After the mean filter was applied, gradients were found in the
+        x-, y-, and z- directions and the square root of the sum of the square
+        of the norms was taken. The image below shows the results of this edge
+        detection algorithm.
+    </p>
+
+    <!--Image source: This image is a screenshot taken of the figures in my
+    report for ECE 5780. The two left images with and without the Gaussian
+    noise were provided by Professor Reeves, and the two right images were
+    the results after my edge detection algorithm was applied to the
+    original images.-->
+    <div class = "proj_img">
+      <img alt = "Edge Detection " src="images/edge_detection.JPG"/>
+    </div>
+
+    <p class = "proj_paragraph">
+        <span class="bold_ital"> Matlab </span>
+        <br/>
+        Working in a team of three, we built a voice calculator in Matlab for
+        our ECE 4250 class, Digital Signal and Image Processing. The application
+        was based on voice recognition, and the user had to speak into the
+        computer microphone in order to use the calculator. It was capable of
+        performing basic calculations such as adding and multiplying two
+        numbers. Once the user spoke into the microphone, the audio file was
+        saved and analyzed in terms of its frequency spectrum. With different
+        types of digital bandpass filter, a certain range on the frequency
+        spectrum would correspond to different numbers or mathematical
+        operations. A GUI was also implemented to show the FFT of the audio
+        signal as well as the current equation being evaluated. The program was
+        capable of reading back the equation to the user in different voices as
+        well.
+    </p>
+    <hr/>
+  </section>
+
+  <section>
+    <h3> Hardware </h3>
+
+    <p class = "proj_paragraph">
+        <span class="bold_ital"> Analog Integrated Circuit Design </span>
+        <br/>
+        In ECE 4530, Analog Integrated Circuit Design, I worked on a lot of
+        low-level projects that dealt with transistors. I fully designed a
+        differential folded-cascode amplifier in Cadence that met specified
+        requirements. This included restrictions on gain, bandwidth, amplitude,
+        and phase while optimizing chip layout area and power consumption. I
+        also performed DC, AC, and transient simulations on various amplifier
+        topologies based on common drain, common source, and common gate
+        building blocks to ensure proper node voltage biases, gain and bandwidth
+        specifications, high common mode rejection, and linearity in transience.
+        In addition, I worked with two other people and engineered a full duplex
+        transceiver mixer system that combined an RF signal with a local
+        oscillator through bandpass filtering capability, non-ideal pulse
+        generation using RC circuits, and cascaded Gilbert cell topologies. This
+        is a transistor level schematic of the differential folded cascode
+        amplifier.
+    </p>
+
+    <!--Image source: This image is a screenshot taken of the figure in my
+    report for ECE 4530. -->
+    <div class = "proj_img">
+      <img alt = "Transistor Circuit" src="images/analog.JPG"/>
+    </div>
+
+    <p class = "proj_paragraph">
+      This amplifier has two stages, the first of which is a telescopic cascode
+      stage. Compared with other conventional designs, this amplifier has the
+      highest gain. To meet the gain specifications, a second stage was required,
+      which was the folded cascode amplifier. This design had a higher input
+      swing, allowing for simple biasing and more headroom. Pole-splitting was
+      required to pull the dominant pole of the system in and push the second
+      pole out, which resulted in a RHP zero that destroyed the phase margin at
+      useful frequencies. Thus, a series resistance and capacitance were used to
+      cancel out this zero with Miller compensation.
+    </p>
+
+    <p class = "proj_paragraph">
+        <span class="bold_ital"> LM386 Low Voltage Amplifier Speakers </span>
+        <br/>
+        Recently, I have also been working on building my own pair of portable
+        speakers. The power is supplied by rechargeable 9V batteries and the
+        circuitry is small enough to fit in a box that is 6" x 6" in length and
+        width and 4" in height. With a power rating of 1W, the speakers are loud
+        enough to be heard in common living rooms. The circuitry makes use of
+        the LM386 amplifier, multiple resistors, a stripped down auxiliary
+        cable, and both AC coupling and bypass capacitors. To protect the
+        speakers from DC signals, an AC coupling capacitor is placed in between
+        the positive terminal of the speakers and the output of the amplifier.
+        This lets through only the AC signals to the speakers, which is
+        intuitive as sound is made of different oscillatory frequencies. A
+        bypass capacitor is placed near the voltage supply to remove any AC
+        ripples and let through only the DC components from the battery. A work
+        in progress, I hope to also eventually incorporate bluetooth capability
+        for wireless communication. It would also be aesthetically pleasing to
+        have LEDs that indicate the speakers are on, and perhaps even to flash
+        to the beat of a song. Here is a video of what I have so far (if you are
+        not using headphones, you may have to increase the volume on your
+        speakers to hear it).
+    </p>
+
+    <!-- This a a video of the speakers I made, taken by me. -->
+
+    <video controls>
+      <source src="speakers.webm" type="video/webm">
+    </video>
+
+    <hr/>
+  </section>
+
+</body>
+</html>
