@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jason's Resume and Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all"/>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="Name"> Jason Duong </h1>
+    <!-- Image source: These three photos were taken by my brother
+    at home in Brooklyn. -->
+    <div class = "self_img">
+      <img alt = "Self Photo" src="images/self_photo.JPG"/>
+      <img alt = "Self Photo" src="images/hair_photo.JPG"/>
+      <img alt = "Self Photo" src="images/linkedin_photo.png"/>
+    </div>
+
+    <nav>
+      <ul class = "navigation">
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="past_work_experience.html"> Past Work Experience </a> </li>
+        <li> <a href="projects.html"> Projects </a> </li>
+        <li> <a href="education.html"> Education </a> </li>
+        <li> <a href="technical_skills.html"> Technical Skills </a> </li>
+        <li> <a href="volunteer.html"> Volunteer Work </a> </li>
+        <li> <a href="about_me.html"> About Me </a> </li>
+        <li> <a href="contact.html"> Contact Info </a> </li>
+      </ul>
+    </nav>
+    <hr/>
+  </header>
+
+  <section>
+    <h3> Past Work Experience </h3>
+    <p class="exp_paragraph">
+      Being able to apply theoretical knowledge to make real-life business
+      decisions is an important skill to have. I have experience working in the
+      software and aerospace industries, both which require high creativity and
+      resourcefulness. Over the past few years, I have enhanced my technical
+      proficiency, gaining hands-on experience with lab equipment, creating
+      designs for both hardware and software applications, and finding solutions
+      to very complicated problems. But in addition to that, I have also gained
+      experience writing technical papers, developing test procedures, and
+      communicating with co-workers and other companies effectively. As an
+      electrical and computer engineer, I understand that not only is it
+      prescribed to have the relevant technical skills, but it is also critical
+      to foster a professional and dynamic relationship with my co-workers to
+      ensure a positive work environment. My work experience has given me the
+      tools to make an immediate positive impact, both technically and
+      professionally.
+    </p>
+    <hr/>
+  </section>
+
+  <section>
+    <p class="company"> Insitu, Hood River, Oregon </p>
+    <p class="occupation"> Hardware Electronics Intern </p>
+
+    <p class="exp_paragraph">
+        It was here where I learned the ins and outs of the aerospace industry.
+        During my time at Insitu, I worked on multiple projects that directly
+        affected the quality and production of the engine board for one of the
+        unmanned aircraft systems. In the field, it is important that the system
+        operates well under different environmental stresses, including but not
+        limited to factors such as heat, temperature, humidity, and proximity to
+        natural obstacles. Thus, it was crucial that I performed a part stress
+        analysis on different components on the engine board, as one failure
+        could be catastrophic for the aircraft. During the analysis, I
+        characterized different properties such as power dissipation, applied
+        voltages, and derating specifications. By cultivating my attention to
+        detail and handling so many different board components responsibly, I
+        made finding causes of failure much more efficient and gained the trust
+        of my peers when doing rigorous circuit analysis. Here is a photo of
+        an unmanned aircraft system on a launcher, prepared for flight.
+    </p>
+
+    <!-- The photo was taken by me. -->
+    <div class = "insitu_img">
+      <img alt = "Unmanned Aircraft System" src="images/insitu.JPG"/>
+    </div>
+
+    <p class="exp_paragraph">
+        In addition to much of the theoretical work done, I also worked with the
+        actual engine board in the laboratory. I performed many different tests
+        to ensure the functionality of the engine board, including continuity
+        and resistivity tests, sensor monitoring, voltage probing, and firmware
+        calibration. In doing so, I developed a functional acceptance test
+        procedure that made it possible for my co-workers and board vendors to
+        reproduce the exact same tests that I performed. This guaranteed
+        consistency when testing the boards and defined the standards that
+        engine boards were expected to operate at after being manufactured. The
+        acceptance test procedure helped expose problems on different engine
+        boards, such as certain voltage rails not being met or parts of a
+        circuit that weren't functioning properly.
+    </p>
+
+    <p class="exp_paragraph">
+        To improve the quality of the test setup, I also worked on a project
+        that simulated the engine board circuitry while connected to a fuel
+        pump. I designed and built a circuit that used the engine board as a
+        model, effectively eliminating the need for excess cabling and huge
+        power supplies that would otherwise clutter the lab benches. Instead, it
+        required a small CPU power supply and interfaced with an NI data
+        acquistion system. Using high-frequency analysis, I specified different
+        inductors, resistors, and capacitors required for filtering in the
+        circuit, incorporated design changes to protect the power supply against
+        kickback voltages, and performed a power analysis to ensure the
+        components used were rated properly. In the process, I gained a lot of
+        experience soldering onto perf-boards, working with network connections,
+        and optimizing the cost of all the components required in the system.
+    </p>
+
+    <p class="exp_paragraph">
+        When working with engine boards, it is also important to consider the
+        deterioration that occurs after months or years of operation. The wear
+        and tear can cause damage to different components, and the aircraft can
+        go down when least expected. To address this, I drafted a procedure to
+        perform highly accelerated life testing, HALT, on the engine board. This
+        is the process of stressing the board to its destruct limits, points at
+        which all functionality is lost even after returning to operational
+        limits. I included procedures for hot and cold temperature step
+        stresses, vibrational tests, rapid thermal ramps, voltage and current
+        margining, and input signal timing manipulation. Factors that I
+        considered included things such as temperature dwell rate, different
+        times to power cycle, and performing a verification HALT test to
+        validate any solutions proposed.
+    </p>
+    <hr/>
+  </section>
+
+  <section>
+    <p class="company"> Mirai IT Solutions, New York, New York </p>
+    <p class="occupation"> Software Engineering Intern </p>
+
+    <p class="exp_paragraph">
+        At Mirai IT Solutions, I learned a lot about Android app development and
+        working with Java object-oriented programming to create a point of sale
+        system. By implementing the model-view-controller (MVC) architectural
+        pattern, I used a broadcast platform to facilitate communication between
+        activities and fragments in the application. This gave the system
+        modularity, making debugging more efficient and the code easier to
+        analyze. In developing the app, I also made considerations regarding the
+        structure of the code and the actual layout of the app. I designed
+        different Java classes with standard naming and commenting conventions,
+        allowing others to easily understand the coding concept and design.
+    </p>
+
+    <p class="exp_paragraph">
+        To provide full functionality of the point of sale system, I created a
+        SQL server database and established a reliable connection between the
+        server and the Android application. The database included many different
+        items that were served by the restaurant, and I helped with
+        categorization to make navigation of the system easier. This database
+        held all of the information required by the application, including
+        things such as price, food type, and customer numbers. Because the
+        values for these different categories could change with time, such as
+        the price of food increasing, I programmed the code dynamically. Thus,
+        any changes in the database would automatically be updated in the
+        application, providing an extra layer of separation between the user and
+        the back-end.
+    </p>
+
+    <p class="exp_paragraph">
+        I also did a lot of work with front-end development by producing XML
+        files that reflected the design of the written code on an Android
+        device. I changed the attributes of different fragments, laid out
+        different buttons on the screen so that they would be aesthetically
+        pleasing, and included tables that would update upon tapping these
+        buttons on the device. This made the application user-friendly,
+        especially important when used in energetic settings such as
+        restaurants.
+    </p>
+
+    <p class="exp_paragraph">
+        An important aspect of the internship was also learning to present my
+        ideas to other people. I gained a lot of experience working with
+        PowerPoint and communicating with others who didn't speak the same
+        language as me. This helped me focus on the important points of my
+        application and create diagrams that explained what I was trying to
+        accomplish with the code despite the language barrier.
+    </p>
+    <hr/>
+  </section>
+
+</body>
+</html>
