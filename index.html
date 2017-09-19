@@ -1,1 +1,106 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jason's Resume and Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all"/>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="Name"> Jason Duong </h1>
+    <!-- Image source: These three photos were taken by my brother
+    at home in Brooklyn. -->
+    <div class = "self_img">
+      <img alt = "Self Photo" src="images/self_photo.JPG"/>
+      <img alt = "Self Photo" src="images/hair_photo.JPG"/>
+      <img alt = "Self Photo" src="images/linkedin_photo.png"/>
+    </div>
+
+    <nav>
+      <ul class = "navigation">
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="past_work_experience.html"> Past Work Experience </a> </li>
+        <li> <a href="projects.html"> Projects </a> </li>
+        <li> <a href="education.html"> Education </a> </li>
+        <li> <a href="technical_skills.html"> Technical Skills </a> </li>
+        <li> <a href="volunteer.html"> Volunteer Work </a> </li>
+        <li> <a href="about_me.html"> About Me </a> </li>
+        <li> <a href="contact.html"> Contact Info </a> </li>
+      </ul>
+    </nav>
+    <hr/>
+  </header>
+
+  <section>
+    <h3 class="home"> Background </h3>
+    <p class="home_paragraph">
+      The name's Jason, a 4th year college student currently studying
+      Electrical and Computer Engineering at Cornell University. Raised in
+      Brooklyn, the city that never sleeps is where I draw much of my
+      inspiration. I believe that in order to truly appreciate well-crafted
+      hardware or elegantly-designed software code, it is always important
+      to see the underlying design. Developing these technological platforms
+      takes motivation, ambition, and hard-work, qualities I exhibit both
+      consistently and comfortably in any environment. Whether I am
+      designing and analyzing electrical systems or volunteering in my
+      community, my passion for electronics grounds me and remains my
+      foundation.
+    </p>
+
+    <!--Image Source: Both these photos were taken by me. -->
+    <div class = "setting_img">
+      <img alt = "Cornell Scenery" src="images/cornell.JPG"/>
+      <img alt = "New York Skyline" src="images/newyork.JPG"/>
+    </div>
+
+    <hr/>
+  </section>
+
+  <section>
+    <h3 class="home"> Recent Activities </h3>
+
+    <p class="home_paragraph">
+      During the summer this past year, I interned at a company called
+      Insitu. Insitu is a subsidiary of The Boeing Company focused on
+      designing, developing, and supporting unmanned aircraft systems in the
+      aerospace industry. Here is some of the work I did:
+    </p>
+
+    <ul class="home_paragraph">
+      <li> Developed an acceptance test procedure to verify functionality
+           of engine board for unmanned aircraft systems, including
+           continuity andd resistivity tests, sensor monitoring, voltage
+           measurements, and firmware calibration. </li>
+      <li> Designed filters for engine board circuitry using high-frequency
+           analysis, protected power supplies against kickback voltages
+           through the use of fuses, and performed power analysis on
+           various circuit components. </li>
+      <li> Performed part stress analysis to characterize things such as
+           power dissipation and voltage applications. </li>
+      <li> Became familiar with highly accelerated life testing and drafted
+           a procedure outlining the process for the engine board. </li>
+    </ul>
+
+    <p class="home_paragraph">
+      I have also been working on my own pair of portable speakers, hopefully
+      ones that are loud enough to listen to while playing basketball outdoors.
+      I make use of the LM386 low voltage audio power amplifier powered by a
+      9V battery supply. The speakers used have an impedance of 8Ohms and a
+      power rating of 1W, enough to listen to them comfortably in large rooms. I
+      am incorporating design changes with time, thinking about where certain
+      bypass capacitors should go to remove high frequency oscillations or how
+      to properly protect the speakers by AC coupling the output of the
+      amplifier. I would also like to include Bluetooth capability and work with
+      a microcontroller such as the Arduino to provide indicator LEDs that flash
+      with the beat of a song.
+    </p>
+  </section>
+
+  <p class="home_paragraph"> For more information about me, check out the other
+                             links on my page! </p>
+  <hr/>
+
+</body>
+</html>
